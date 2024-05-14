@@ -24007,7 +24007,7 @@ _.at=d
 _.a=e},
 LD:function LD(){},
 a8a:function a8a(a){this.a=a},
-aNP(a){return A.anq(new A.anU(a,null),t.Wd)},
+aNP(a,b){return A.anq(new A.anU(a,b),t.Wd)},
 anq(a,b){return A.aME(a,b,b)},
 aME(a,b,c){var s=0,r=A.X(c),q,p=2,o,n=[],m,l,k
 var $async$anq=A.Y(function(d,e){if(d===1){o=e
@@ -45981,8 +45981,9 @@ this.yI()},
 yI(){var s=0,r=A.X(t.H),q=1,p,o=this,n,m,l,k,j,i
 var $async$yI=A.Y(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:q=3
+k=t.N
 s=6
-return A.a_(A.aNP(A.j3("https://event-seeker-api.azurewebsites.net/api/event/all")),$async$yI)
+return A.a_(A.aNP(A.j3("https://event-seeker-api.azurewebsites.net/api/event/all"),A.aP(["Accept","application/json","Access-Control_Allow_Origin","*"],k,k)),$async$yI)
 case 6:n=b
 if(n.b===200){k=n
 m=B.bi.F1(0,A.aNv(A.aL4(k.e).c.a.i(0,"charset")).dZ(0,k.w),null)
@@ -80860,6 +80861,7 @@ ww(a,b,c){return this.abV(a,b,c)},
 abV(a,b,c){var s=0,r=A.X(t.Wd),q,p=this,o,n
 var $async$ww=A.Y(function(d,e){if(d===1)return A.U(e,r)
 while(true)switch(s){case 0:o=A.aHF(a,b)
+o.r.F(0,c)
 n=A
 s=3
 return A.a_(p.h6(0,o),$async$ww)
